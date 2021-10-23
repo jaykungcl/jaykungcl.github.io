@@ -405,20 +405,20 @@ input:checked + .slider:before {
     transition: transform 500ms ease;
 }
 .card.physics{
-    background-image: url("img/physics.JPG");
+    background-image: url("img/physics.jpg");
 }
 .card.wiki{
-    background-image: url("img/wiki.JPG");
+    background-image: url("img/wiki.jpg");
 }
 .card.commerce{
-    background-image: url("img/commerce.JPG");
+    background-image: url("img/commerce.jpg");
 }
 .card.network{
-    background-image: url("img/network.JPG");
+    background-image: url("img/network.jpg");
     flex: 1 0 auto;
 }
 .card.mail{
-    background-image: url("img/mail.JPG");
+    background-image: url("img/mail.jpg");
     flex: 1 0 auto;
 }
 .card:hover, .card:focus-within{
