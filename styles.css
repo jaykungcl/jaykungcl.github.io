@@ -414,7 +414,7 @@ input:checked + .slider:before {
     background-image: url("img/commerce.jpg");
 }
 .card.network{
-    background-image: url("img/network.jpg");
+    background-image: url("img/network.JPG");
     flex: 1 0 auto;
 }
 .card.mail{
