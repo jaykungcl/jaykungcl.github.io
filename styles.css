@@ -209,9 +209,11 @@ footer .link a{
 /* Home */
 .glitch{
     position: relative;
+    margin-bottom: 2rem;
     font-size: 4rem;
     font-family: 'Poppins', sans-serif;
     font-weight: 600;
+    line-height: 5rem;
     text-shadow:
         0.05em 0 0 rgba(255,0,0,.75),
         -0.025em -0.05em 0 rgba(0,255,0,.75),
@@ -389,7 +391,7 @@ input:checked + .slider:before {
     display: flex;
     width: 100%;
     gap: 1rem;
-    justify-content: ce;
+    justify-content: center;
     flex-wrap: wrap;
     margin-top: 2rem;
 }
@@ -753,6 +755,9 @@ h1.myname{
 @media (max-width: 600px) {
 
     /* Home */
+    .glitch{
+        text-align: center;
+    }
     .home-text > p{
         margin-bottom: 30px;
     }
@@ -779,7 +784,15 @@ h1.myname{
     }
 
     /* Portfolio */
-
+    .card{
+        width: 80vw;
+    }
+    .card.network{
+        flex: 0 0 auto;
+    }
+    .card.mail{
+        flex: 0 0 auto;
+    }
 
 
     /* About */
