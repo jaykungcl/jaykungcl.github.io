@@ -83,9 +83,11 @@ nav {
 
 .nav-links li:hover {
   background-color: #555555;
+  cursor: pointer;
 }
 
 .nav-links a {
+  display: block;
   text-decoration: none;
   color: white;
 }
@@ -375,11 +377,9 @@ input:checked + .slider:before {
 .port-text {
   padding: 40px 30px;
 }
-/* .box-home p{
-    font-size: 18px;
-} */
 .box-home img {
   border-radius: 0.5em;
+  align-self: center;
 }
 
 /* Portfolio */
@@ -414,16 +414,13 @@ input:checked + .slider:before {
   background-image: url("img/commerce.jpg");
 }
 .card.mail {
-  background-image: url("img/mail.JPG");
-  flex: 1 0 auto;
+  background-image: url("img/mail.jpg");
 }
 .card.network {
   background-image: url("img/network.JPG");
-  flex: 1 0 auto;
 }
 .card.umai {
   background-image: url("img/umai.jpg");
-  flex: 1 0 auto;
 }
 .card.mymoney {
   background-image: url("img/mymoney.jpg");
@@ -805,7 +802,8 @@ h1.myname {
 
   /* Portfolio */
   .card {
-    width: 80vw;
+    width: 90vw;
+    max-width: 90vw;
   }
   .card.network {
     flex: 0 0 auto;
