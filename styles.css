@@ -502,7 +502,7 @@ input:checked + .slider:before {
   padding: 0;
   height: 6rem;
 }
-a.btn {
+.card-content a.btn {
   cursor: pointer;
   display: inline-block;
   text-decoration: none;
