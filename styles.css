@@ -66,7 +66,6 @@ nav {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  margin-top: 13px;
   margin-right: 20px;
 }
 
@@ -132,7 +131,7 @@ nav {
   display: flex;
   flex-direction: column;
   align-items: center;
-  min-height: 100vh;
+  min-height: calc(100vh - 78.7px);
   max-width: 800px;
   padding: 80px 0;
 }
@@ -422,13 +421,14 @@ input:checked + .slider:before {
 .card.umai {
   background-image: url("img/umai.jpg");
 }
+.card.treasure {
+  background-image: url("img/treasure.jpg");
+}
 .card.mymoney {
   background-image: url("img/mymoney.jpg");
-  flex: 1 0 auto;
 }
 .card.thebase {
   background-image: url("img/thebase.jpg");
-  flex: 1 0 auto;
 }
 .card:hover,
 .card:focus-within {
@@ -614,7 +614,11 @@ h1.myname {
   margin: 0 20px;
   flex: 1;
 }
-.box-about.skills ul {
+.box-about.skills-mobile {
+  display: none;
+}
+.box-about.skills ul,
+.box-about.skills-mobile ul {
   padding-left: 30px;
 }
 .certificate {
@@ -760,8 +764,9 @@ h1.myname {
 }
 .submit-btn {
   border: none;
-  padding: 4px 25px;
+  padding: 6px 25px;
   font-size: 14px;
+  font-weight: 600;
   border-radius: 1em;
   background-color: white;
   color: #202020;
@@ -826,8 +831,12 @@ h1.myname {
     margin: 0;
     width: 90%;
   }
-  .box-about.skills {
+  .box-about.skills-mobile {
+    display: block;
     margin: 20px 0;
+  }
+  .box-about.skills {
+    display: none;
   }
   .myname {
     padding-top: 50px;
